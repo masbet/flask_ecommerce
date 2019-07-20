@@ -1,0 +1,68 @@
+{% extends 'admin-base.html'%}
+
+{%block content%}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="row">
+        <div class="col-sm-3">
+            <a href="{{url_for('inputProduk')}}">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" style="margin-bottom: 10px;" data-toggle="modal">+Tambah
+
+                </button>
+            </a>
+
+            <!-- Modal -->
+
+
+
+        </div>
+
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+
+
+                    <th class="text-center" scope="col">Nama Produk</th>
+                    <th class="text-center" scope="col">Harga</th>
+                    <th class="text-center" scope="col">stok</th>
+                    <th class="text-center" scope="col">image</th>
+                    <th class="text-center" scope="col">deskripsi</th>
+                    <th class="text-center" scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- {% for spl in data_supplier %}
+            <tr>
+                <td>{{spl.nama_supplier}}</td>
+                <td>{{spl.alamat}}</td>
+                <td>{{spl.telpon}}</td>
+                <td>
+                    <a href=""><img src="../static/bootstrap/icon/edit.svg" alt="" style="height: 15pt;"></a> |
+                    <a href=""><img src="../static/bootstrap/icon/delete.svg" alt="" style="height: 15pt;"></a>
+                </td>
+            </tr>
+            {% endfor %} -->
+                {% for prd in data_produk %}
+                <tr>
+
+                    <td>{{prd.nama_produk}}</td>
+                    <td>{{prd.harga}}</td>
+                    <td>{{prd.stok}}</td>
+                    <td>{{prd.image_produk}}</td>
+                    <td>{{prd.deskripsi}}</td>
+
+
+                    <td class="text-center">
+                        <a href="{{url_for('editProduk', id=prd.id)}}"><img src="../static/bootstrap/icon/edit.svg"
+                                alt="" style="height: 15pt;"></a> |
+                        <a href="{{url_for('deleteProduk', id=prd.id)}}"><img src="../static/bootstrap/icon/delete.svg"
+                                alt="" style="height: 15pt;"></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+</main>
+
+{%endblock%}

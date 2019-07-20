@@ -1,0 +1,46 @@
+{%extends 'base_login.html'%}
+{%block content%}
+<section id="form">
+    <!--form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+                <div class="login-form">
+                    <!--login form-->
+                    <h2>Login dengan akun anda</h2>
+                    <form action="#">
+                        <input type="email" placeholder="Alamat Email" />
+                        <input type="password" placeholder="Password" />
+                        <span>
+                            <input type="checkbox" class="checkbox">
+                            Biarkan saya tetap masuk
+                        </span>
+                        <button type="submit" class="btn btn-default">Login</button>
+                    </form>
+                </div>
+                <!--/login form-->
+            </div>
+            <div class="col-sm-1">
+                <h2 class="or">ATAU</h2>
+            </div>
+            <div class="col-sm-4">
+                <div class="signup-form">
+                    <!--sign up form-->
+                    <h2>Daftar pengguna baru</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Nama" />
+                        <input type="email" placeholder="Alamat Email" />
+                        <input type="text" placeholder="Username" />
+                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Confirmasi password" />
+
+                        <button type="submit" class="btn btn-default">Daftar</button>
+                    </form>
+                </div>
+                <!--/sign up form-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--/form-->
+{%endblock%}

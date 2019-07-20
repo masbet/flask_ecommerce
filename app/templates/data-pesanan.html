@@ -1,0 +1,67 @@
+{% extends 'admin-base.html'%}
+
+{%block content%}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="row">
+        <div class="col-sm-9"></div>
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm flex-nowrap" style="margin-bottom: 10px;">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Username"
+                    aria-describedby="addon-wrapping">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping">Cari</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th class="text-center" scope="col" style="width: 5%;">No</th>
+                <th class="text-center" scope="col">tanggal</th>
+                <th class="text-center" scope="col">Kode Transaksi</th>
+                <th class="text-center" scope="col">Nama</th>
+                <th class="text-center" scope="col">Telpon/Email</th>
+                <th class="text-center" scope="col">Alamat Lengkap</th>
+                <th class="text-center" scope="col">Metode Pembayaran</th>
+                <th class="text-center" scope="col">Pesanan</th>
+                <th class="text-center" scope="col">Total Pembayaran</th>
+                <th class="text-center" scope="col">Bukti Transaksi</th>
+                <th class="text-center" scope="col" style="width: 6%;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Mark</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Mark</td>
+                <td></td>
+                <td class="text-center">
+                    <a href=""><img src="../static/bootstrap/icon/delete.svg" alt="" style="height: 15pt;"></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+{%endblock%}

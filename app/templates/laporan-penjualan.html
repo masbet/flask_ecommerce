@@ -1,0 +1,71 @@
+{% extends 'admin-base.html'%}
+
+{%block content%}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="col-sm-4 offset-sm-4">
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" style="margin-bottom: 10px;" placeholder="Tahun">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Bulan">
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 10px;">Detail</button>
+
+            </div>
+        </form>
+
+    </div>
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th class="text-center" scope="col" style="width: 5%;">No</th>
+                <th class="text-center" scope="col">Tanggal</th>
+                <th class="text-center" scope="col">Kode Transaksi</th>
+                <th class="text-center" scope="col">Kode Barang</th>
+                <th class="text-center" scope="col">Nama Barang</th>
+                <th class="text-center" scope="col">Jumlah</th>
+                <th class="text-center" scope="col">Harga Jual</th>
+                <th class="text-center" scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Otto</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="7">Sub Total</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="7">Laba</th>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class=" float-right">
+        <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 10px;">Rekap</button>
+        <button type="button" class="btn btn-primary btn-sm" style="margin-bottom: 10px;">Simpan</button>
+    </div>
+</main>
+
+{%endblock%}

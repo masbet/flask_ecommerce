@@ -1,0 +1,56 @@
+{%extends 'base_login.html'%}
+{%block content%}
+<section id="form" style="margin-top: -10px; text-align:center">
+    <!--form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+                <div class="login-form">
+                    <!--login form-->
+                    <h2>Daftar pengguna baru</h2>
+                    <form action="#" method="POST" class="form-horizontal ">
+                        {{form.hidden_tag()}}
+                        <div class="form-group">
+                            {{form.nama_user.label(class="control-label col-sm-4")}}
+                            <div class="col-sm-8">
+                                {{form.nama_user(class="form-control")}}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            {{ form.alamat_email.label(class = "control-label col-sm-4") }}
+                            <div class="col-sm-8">
+                                {{ form.alamat_email(class="form-control") }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            {{ form.username.label(class = "control-label col-sm-4") }}
+                            <div class="col-sm-8">
+                                {{ form.username(class="form-control") }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            {{ form.password.label(class = "control-label col-sm-4") }}
+                            <div class="col-sm-8">
+                                {{ form.password(class = "form-control") }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            {{ form.confirm_password.label(class = "control-label col-sm-4") }}
+                            <div class="col-sm-8">
+                                {{ form.confirm_password(class = "form-control") }}
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+
+                            {{form.daftar(class="col-sm-offset-2 btn btn-primary btn-sm ")}}
+                        </div>
+
+                    </form>
+                </div>
+                <!--/sign up form-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--/form-->
+{%endblock%}
